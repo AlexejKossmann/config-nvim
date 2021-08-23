@@ -24,12 +24,7 @@ set cmdheight=2
 set updatetime=50
 set colorcolumn=80
 set guifont=*
-set statusline=
-set statusline+=\ %F
-set statusline+=\ %m
-set statusline+=\ %y
-set statusline+=\ %n
-set statusline+=\ %L
+cabbrev bterm bo term
 
 call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
@@ -41,6 +36,8 @@ Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug '/home/mpaulson/personal/vim-be-good'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " coc config
@@ -63,6 +60,20 @@ if exists('+termguicolors')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
+
+"vim-airline configuration
+let g:airline#extensions#tabline#anabled = 1
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.linenr = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.paste = ''
+let g:airline_symbols.whitespace = ''
 
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
