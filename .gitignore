@@ -1,3 +1,5 @@
 undodir/*
+colors/*
 !undodir/.gitignore
+!colors/.gitignore
 .netrwhist
