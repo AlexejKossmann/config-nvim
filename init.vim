@@ -13,6 +13,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
+source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/config/coc.vim
+source $HOME/.config/nvim/config/nerdtree.vim
+source $HOME/.config/nvim/config/general.vim
+
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_fields = 1
@@ -34,6 +39,12 @@ nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
+
+tnoremap <leader>h <C-\><C-N><C-w>h
+tnoremap <leader>j <C-\><C-N><C-w>j
+tnoremap <leader>k <C-\><C-N><C-w>k
+tnoremap <leader>l <C-\><C-N><C-w>l
+
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
@@ -51,7 +62,3 @@ function! s:check_back_space() abort
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-source $HOME/.config/nvim/config/general.vim
-source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/config/coc.vim
-source $HOME/.config/nvim/config/nerdtree.vim

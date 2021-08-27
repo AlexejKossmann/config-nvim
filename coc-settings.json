@@ -8,5 +8,7 @@
         "html",
         "css",
         "scss"
-    ]
+    ],
+    "phpls.enable": true
+
 }
