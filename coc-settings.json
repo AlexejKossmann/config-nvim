@@ -7,7 +7,8 @@
         "json",
         "html",
         "css",
-        "scss"
+        "scss",
+        "twig"
     ],
     "phpls.enable": true
 

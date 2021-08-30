@@ -11,12 +11,14 @@ Plug 'preservim/nerdtree'
 Plug '/home/mpaulson/personal/vim-be-good'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-vdebug/vdebug'
 call plug#end()
 
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/config/coc.vim
 source $HOME/.config/nvim/config/nerdtree.vim
 source $HOME/.config/nvim/config/general.vim
+source $HOME/.config/nvim/config/vdebug.vim
 
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
