@@ -1,23 +1,24 @@
-
 call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
 Plug 'sheerun/vim-polyglot'
-Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
-Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug '/home/mpaulson/personal/vim-be-good'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'neovim/nvim-lspconfig'
 Plug 'vim-vdebug/vdebug'
 call plug#end()
 
 source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/config/coc.vim
 source $HOME/.config/nvim/config/nerdtree.vim
 source $HOME/.config/nvim/config/general.vim
+source $HOME/.config/nvim/config/telescope.vim
 source $HOME/.config/nvim/config/vdebug.vim
 
 let g:go_highlight_build_constraints = 1

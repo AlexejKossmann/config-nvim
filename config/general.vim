@@ -1,4 +1,4 @@
-syntax on
+" syntax on
 colorscheme gruvbox
 
 if exists('+termguicolors')
