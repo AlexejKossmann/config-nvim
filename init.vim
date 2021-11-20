@@ -20,6 +20,8 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
 call plug#end()
 
 source $HOME/.config/nvim/themes/airline.vim
@@ -28,7 +30,8 @@ source $HOME/.config/nvim/config/general.vim
 source $HOME/.config/nvim/config/telescope.vim
 source $HOME/.config/nvim/config/vdebug.vim
 source $HOME/.config/nvim/config/lsp.vim
-source $HOME/.config/nvim/config/nvim-cmp.vim
+
+source $HOME/.config/nvim/lua/config/nvim-cmp.lua
 
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1

@@ -45,8 +45,6 @@ vnoremap J :m '>+1<CR>gv=gv
 " resize split
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
-" open files and search
-nnoremap <Leader>pf :Files<CR>
 
 " airline tab navigation
 nnoremap <C-l> :bnext<CR>
