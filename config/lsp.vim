@@ -13,15 +13,15 @@ endif
 
 let g:gruvbox_invert_selection='0'
 
-source $HOME/.config/nvim/config/lsp/lspconfig.lua
+luafile $HOME/.config/nvim/config/lsp/lspconfig.lua
 
-source $HOME/.config/nvim/config/lsp/cssconfig.lua
-source $HOME/.config/nvim/config/lsp/htmlconfig.lua
-source $HOME/.config/nvim/config/lsp/jsconfig.lua
-source $HOME/.config/nvim/config/lsp/jsonconfig.lua
-source $HOME/.config/nvim/config/lsp/phpconfig.lua
-source $HOME/.config/nvim/config/lsp/tsconfig.lua
-source $HOME/.config/nvim/config/lsp/yamlconfig.lua
+luafile $HOME/.config/nvim/config/lsp/cssconfig.lua
+luafile $HOME/.config/nvim/config/lsp/htmlconfig.lua
+luafile $HOME/.config/nvim/config/lsp/jsconfig.lua
+luafile $HOME/.config/nvim/config/lsp/jsonconfig.lua
+luafile $HOME/.config/nvim/config/lsp/phpconfig.lua
+luafile $HOME/.config/nvim/config/lsp/tsconfig.lua
+luafile $HOME/.config/nvim/config/lsp/yamlconfig.lua
 
 let g:compe = {}
 let g:compe.enabled = v:true

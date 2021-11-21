@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
@@ -13,7 +14,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neovim/nvim-lspconfig'
 Plug 'vim-vdebug/vdebug'
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
+Plug 'phpactor/phpactor', {'for': 'php', 'branch': 'master', 'do': 'composer install --no-dev -o'}
 Plug 'nvim-lua/completion-nvim'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -22,6 +23,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 source $HOME/.config/nvim/themes/airline.vim
@@ -30,8 +32,10 @@ source $HOME/.config/nvim/config/general.vim
 source $HOME/.config/nvim/config/telescope.vim
 source $HOME/.config/nvim/config/vdebug.vim
 source $HOME/.config/nvim/config/lsp.vim
+source $HOME/.config/nvim/config/floaterm.vim
+source $HOME/.config/nvim/config/phpactor.vim
 
-source $HOME/.config/nvim/lua/config/nvim-cmp.lua
+luafile $HOME/.config/nvim/lua/config/nvim-cmp.lua
 
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
