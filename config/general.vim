@@ -1,5 +1,6 @@
 " syntax on
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme darcula
 
 if exists('+termguicolors')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"

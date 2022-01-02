@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+Plug 'doums/darcula'
 Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-fugitive'
