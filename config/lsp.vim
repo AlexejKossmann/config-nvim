@@ -16,6 +16,7 @@ let g:gruvbox_invert_selection='0'
 luafile $HOME/.config/nvim/config/lsp/lspconfig.lua
 
 luafile $HOME/.config/nvim/config/lsp/cssconfig.lua
+luafile $HOME/.config/nvim/config/lsp/goconfig.lua
 luafile $HOME/.config/nvim/config/lsp/htmlconfig.lua
 luafile $HOME/.config/nvim/config/lsp/jsconfig.lua
 luafile $HOME/.config/nvim/config/lsp/jsonconfig.lua
